@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <!-- title icon -->
+  <link rel="icon" href="./image/images.png" />
+  <!-- Bootstrap style -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!-- Font Awesome style -->
+  <link rel="stylesheet" href="./css/all.min.css">
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <!-- CSS FILE -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!----------------------------------- Navbar ------------------------->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand d-flex justify-content-center align-items-center" href="#">
+            <h6>Weather</h6>
+            <p>tagline goes here</p>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Live cameras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Photos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                </li>
+        </div>
+    </div>
+</nav>
+
+  <section>
+    <div class="container d-flex justify-content-center align-items-center">
+      <div class="weather rounded-5">
+        <div class="time text-center mb-2">
+          <h1 class="text-capitalize mb-3 p-0"> <i class="fa-solid fa-cloud-sun text-white"></i> weather app <i class="fa-solid fa-cloud text-white"></i></h1>
+        </div>
+        <div class="search mb-2">
+          <input id="inputSearch" type="text" class="form-control" placeholder="Enter City">
+          <button id="btnSearch" class="btn searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <p class="text-danger fs-md-4 fs-sm-6 text-capitalize text-center error">No Result Found</p>
+        <div class="row m-0 gy-4">
+          <div class="today-weather rounded-4 col-md-4 py-3 pb-0 px-3 d-flex flex-column justify-content-between">
+            <header class="d-flex justify-content-between align-items-center">
+              <p class="todayDate"></p>
+              <div><span class="todayMonth"></span></div>
+            </header>
+            <div class="body-weather text-center ">
+              <h2 class="mb-2 text-capitalize cityName"></h2>
+              <div class="city-heat">
+                <h4 class="mb-0 todayTemp"></h4>
+                <div class="logo mb-1 w-50 m-auto"><img  class="w-100 dayIcon" src="" alt=""></div>
+                <h3 class="weather-info text-capitalize todayCondition"></h3>
+              </div>
+            </div>
+            <footer>
+              <div class="add-info d-flex justify-content-between align-items-center py-4">
+                <div class="todayWind"><p><i class="fa-solid fa-wind"></i> </p></div>
+                <div class="todayHumididty"><p><i class="fa-solid fa-water"></i> </p></div>
+                <div class="todayDirection"><p><i class="fa-regular fa-compass"></i> </p></div>
+              </div>
+            </footer>
+          </div>
+          <div class="col-md-8">
+            <div class="row hi gy-3">
+              <div class="col-md-6">
+                  <div class="days p-3 d-flex justify-content-between flex-column rounded-3 ">
+                    <header class="d-flex justify-content-between align-items-center">
+                    <div> <span class="nextDayMonth"></span></div>
+                    </header>
+                    <div class="body-weather mb-2 text-center">
+                      <p class="nextDayDate mb-4"></p>
+                      <div class="city-heat">
+                        <h4 class="mb-2 nextDayTemp"><span></span></h4>
+                        <div class="logo mb-2 "><img class="w-50 dayIcon" src="" alt=""></div>
+                        <h3 class="weather-info nextDayCondition"></h3>
+                      </div>
+                    </div>
+                    <footer>
+                      <div class="add-info d-flex justify-content-between align-items-center py-2">
+                        <div class="nextDayWind"><p><i class="fa-solid fa-wind"></i> </p></div>
+                        <div class="nextDayHumididty"><p><i class="fa-solid fa-water"></i> </p></div>
+                        <div class="nextDayDirection"><p><i class="fa-regular fa-compass"></i> </p></div>
+                      </div>
+                    </footer>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="days p-3 d-flex justify-content-between flex-column rounded-3 ">
+                    <header class="d-flex justify-content-between align-items-center">
+                    <div> <span class="nextDayMonth"></span></div>
+                    </header>
+                    <div class="body-weather mb-2 text-center">
+                      <p class="nextDayDate mb-4"></p>
+                      <div class="city-heat">
+                        <h4 class="mb-2 nextDayTemp"><span></span></h4>
+                        <div class="logo mb-2 "><img class="w-50 dayIcon" src="" alt=""></div>
+                        <h3 class="weather-info nextDayCondition"></h3>
+                      </div>
+                    </div>
+                    <footer>
+                      <div class="add-info d-flex justify-content-between align-items-center py-2">
+                        <div class="nextDayWind"><p><i class="fa-solid fa-wind"></i> </p></div>
+                        <div class="nextDayHumididty"><p><i class="fa-solid fa-water"></i> </p></div>
+                        <div class="nextDayDirection"><p><i class="fa-regular fa-compass"></i> </p></div>
+                      </div>
+                    </footer>
+                  </div>
+              </div>
+              <span class="timeDate text-center fs-3"></span>
+            </div>
+            
+          </div
+            </div>   
+          </div>
+      </div>
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="container p-5">
+        <div class="row gy-4">
+            <div class="col-lg-8 col-md-10 subscribe position-relative">
+                <input type="text" placeholder="Enter your email to subscribe.....">
+                <button>Subscribe</button>
+            </div>
+            <div class="col-lg-2 offset-lg-1">
+                <ul class="d-flex icons">
+                   <li><a href="www.pinterest.com"><i class="fa-brands fa-pinterest"></i></a></li>
+                    <li><a href="www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="www.google.com"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                    <li><a href="www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                  </ul>
+            </div>
+            <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </div>
+        </footer>
+
+  <!-- Sweet Alert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Import Bootstrap JS File -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <!-- Main JS File -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

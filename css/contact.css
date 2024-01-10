@@ -1,0 +1,212 @@
+*{
+    text-decoration: none;
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  body {
+    background-image: url("../image/skyImage.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* ----- Navbar ----- */
+  .navbar {
+    background-color: transparent;
+    color: #244480;
+    padding: 10px 0;
+  }
+  
+  .navbar-brand .logo {
+    width: 64px;
+    margin-right: 10px;
+  }
+  .navbar-brand  h6 {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  
+  .navbar-brand  p {
+    font-size: .7142857143em;
+    display: block;
+    color: #ffffff;
+    margin-inline: -59px;
+    margin-top: 23px;
+  }
+  
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 5px 25px;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: 0.5s;
+  }
+  
+  .navbar-expand-lg .navbar-nav .nav-link:hover {
+    border-color: #ffffff;
+    border: 2px solid #244480;
+  }
+  
+  .navbar-expand-lg .navbar-nav .nav-link.active {
+    color: #ffffff;
+    border: 2px solid #244480;
+  }
+  
+  .nav-item {
+    margin-left: 10px;
+  }
+  
+
+.crumb{
+    background: #262936;
+    border-radius: 40px;
+    padding: 20px 30px;
+    font-size: 13px;
+    font-size: 0.9285714286em;
+  }
+  .crumb a {
+    color: #bfc1c8;
+  }
+  .crumb i {
+    display: inline-block;
+    vertical-align: baseline;
+    width: 12px;
+    height: 7px;
+    margin: 0 10px;
+  }
+  .crumb a:hover {
+    text-decoration: underline;
+  }
+  .crumb span {
+    color: white;
+  }
+  .contact-details {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .contact-details address {
+    padding-left: 30px;
+    position: relative;
+  }
+  .contact-details address img {
+    position: absolute;
+    top: 3px;
+    left: 8px;
+    width: 12px;
+    height: 19px;
+  }
+  .contact-details address p{
+    font-size: 14px;
+      font-weight: 300;
+      line-height: 1.5;
+  }
+  .contact-details a img{
+    width: 19px;
+    height: 19px;
+    margin-left: 5px;
+  }
+  .section-title{
+    font-size: 2.5714285714em;
+    font-weight: 700;
+    color: #244480;
+  }
+  .section-paragraph{
+    color: #244480;
+  }
+  .contact-form input:not([type="submit"]), .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid #244480;
+    background: transparent;
+    border-radius: 50px;
+  }
+  .contact-form input::placeholder,textarea::placeholder{
+    color: #244480 !important;
+  }
+  .contact-form .text-right{
+    text-align: right;
+  }
+  .contact-form .btn{
+    color: #244480;
+    background-color: #ffffff;
+    font-weight: 500;
+    padding: 2%;
+    font-size: 20px;
+  }
+  .contact-form .btn:hover{
+    color: #ffffff;
+    background-color: #244480;
+  }
+  /* ------------ Footer ----------*/
+  
+#footer {
+    background-color: transparent;
+  }
+  
+  footer .subscribe input {
+    width: 100%;
+    background-color: #ededf0;
+    padding: 20px 100px 20px 20px;
+    color: white;
+    border-radius: 440px;
+    outline: none;
+    border: none;
+  }
+  
+  footer .subscribe button {
+    position: absolute;
+    right: 17px;
+    top: 5px;
+    bottom: 5px;
+    outline: none;
+    border: none;
+    background-color: #1d2d68;
+    color: white;
+    border-radius: 40px;
+    padding: 10px 20px;
+  }
+  footer .subscribe button:hover{
+    background-color: #495a97;
+  }
+  footer ul li a {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 5px;
+    color: #244480;
+    font-size: 1.42857em;
+    transition: 0.3s;
+  }
+  
+  footer p {
+    color: #1d2d68;
+    font-size: .7142857143em;
+    margin: 20px 0 0; 
+  }
+  
+  footer ul li:hover a {
+    background-color: #ffffff;
+    color: #244480;
+  }
+  
+  @media screen and (max-width: 991px) {
+    footer .subscribe button {
+      width: 50%;
+      font-size: .625rem;
+    }
+    footer ul{
+      width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+  

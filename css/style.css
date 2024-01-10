@@ -1,0 +1,284 @@
+*{
+  text-decoration: none;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+body {
+  background-image: url("../image/cut.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ----- Navbar ----- */
+.navbar {
+  background-color: transparent;
+  color: #244480;
+  padding: 10px 0;
+}
+
+.navbar-brand .logo {
+  width: 64px;
+  margin-right: 10px;
+}
+.navbar-brand  h6 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.navbar-brand  p {
+  font-size: .7142857143em;
+  display: block;
+  color: #244480;
+  margin-inline: -59px;
+  margin-top: 23px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 5px 25px;
+  color: #244480;
+  font-size: 18px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  border-color: #ffffff;
+  border: 2px solid #244480;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active {
+  color: #244480;
+  border: 2px solid #244480;
+}
+
+.nav-item {
+  margin-left: 10px;
+}
+
+h1 {
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-family: 'Oswald', sans-serif;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  margin-bottom: 0 !important;
+}
+
+.timeDate {
+  font-weight: 800;
+  background-color: transparent;
+  color: #244480;
+  border: #96b5ee 6px solid;
+  padding: 30px;
+  width: 90%;
+  margin-inline: auto;
+  border-radius: 20px;
+  text-shadow: 1px 1px 1px black;
+}
+
+.search  {
+  position: relative;
+}
+input::placeholder{
+  font-size: .9375rem;
+}
+.row {
+  height: 87%;
+  
+}
+
+.time {
+  text-shadow: 1px 1px 1px black;
+}
+
+
+.today-weather {
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  box-shadow: 1px 1px 10px black;
+}
+.search button {
+  position: absolute;
+  right: -21px;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.searchBtn{
+  background-color: #244480;
+  color: aliceblue;
+}
+.weather {
+  color: #244480;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  padding: 20px;
+}
+
+.weather .today-weather {
+  background-image: url("../image/cut.jpg");
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: blur(.625rem);
+}
+
+.weather header p {
+  font-size: .9375rem;
+}
+
+.weather .city-heat h4 {
+  position: relative;
+  font-size: 3.125rem;
+}
+.weather .city-heat h4 span {
+  position: absolute;
+  font-size: 1.5625rem;
+  top: 5px;
+}
+
+p.error {
+  display: none;
+}
+
+.days {
+  box-shadow: 1px 1px 10px rgb(57, 102, 119);
+  background-image: url("../image/cut.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  height: 100%;
+}
+
+.days header p {
+  font-size: .9375rem;
+}
+
+.weather-info {
+  font-size: .9375rem;
+}
+
+.days h2 {
+  font-size: 1.125rem;
+}
+.days .nextDayDate {
+  font-size: 20px;
+}
+
+.days .city-heat h4 {
+  font-size: 1.875rem;
+}
+.days .city-heat h4 span {
+  font-size: .9375rem;
+}
+
+.days footer {
+  font-size: .75rem;
+}
+
+.days .logo {
+  width: 60%;
+  margin: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+  section {
+    padding-top: 20px;
+    height: 100%;
+  }
+  .container {
+    height: auto;
+  }
+
+  .days {
+    min-height: 100%;
+  }
+  .days footer {
+    font-size: .9375rem;
+  }
+  .timeDate {
+    width: 100%;
+  }
+
+}
+
+
+/*------------------------- Footer ------------------------*/
+
+#footer {
+  background-color: transparent;
+}
+
+footer .subscribe input {
+  width: 100%;
+  background-color: #ededf0;
+  padding: 20px 100px 20px 20px;
+  color: white;
+  border-radius: 440px;
+  outline: none;
+  border: none;
+}
+
+footer .subscribe button {
+  position: absolute;
+  right: 17px;
+  top: 5px;
+  bottom: 5px;
+  outline: none;
+  border: none;
+  background-color: #1d2d68;
+  color: white;
+  border-radius: 40px;
+  padding: 10px 20px;
+}
+footer .subscribe button:hover{
+  background-color: #495a97;
+}
+footer ul li a {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-left: 5px;
+  color: #244480;
+  font-size: 1.42857em;
+  transition: 0.3s;
+}
+
+footer p {
+  color: #1d2d68;
+  font-size: .7142857143em;
+  margin: 20px 0 0; 
+}
+
+footer ul li:hover a {
+  background-color: #ffffff;
+  color: #244480;
+}
+
+@media screen and (max-width: 991px) {
+  footer .subscribe button {
+    width: 50%;
+    font-size: .625rem;
+  }
+  footer ul{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
