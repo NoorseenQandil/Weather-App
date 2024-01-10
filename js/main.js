@@ -63,6 +63,18 @@ async function getWeather(country="alex") {
 getWeather()
 
 
+btnSearch.addEventListener("click", function () {
+    if (inputSearch.value === "") {
+      Swal.fire({
+        title: "Select City First",
+        text: "🤡",
+        icon: "error",
+      });
+    } else {
+      getWeather(inputSearch.value);
+    }
+  });
+
 function displayTodayWeather() {
     let date = new Date ();
     todayDate.innerHTML = days[date.getDay()];
