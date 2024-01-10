@@ -15,8 +15,18 @@ Weather App created with HTML, CSS, Bootstrap and Java Script.
 ### 2. Enter city:
 * Enter city to find its weather forcast around 3 days.
 
+### 3. Warning:
+* If press search without typing city, show alert.
+* If enter not found city, show warning.
+  
+### 4. Show current date and time:
+* Page includes the current date and time.
+
+### 5. Show days date:
+* Search result includes 3 results. The 1st one for today, 2nd one for tomorrow and the 3rd one for the next following day.
+* Each result of then includes the date and day.
    
-### 8. Responsive Design
+### 6. Responsive Design
 * Page design is responsive for all devices.
 
 
@@ -29,7 +39,7 @@ Weather App created with HTML, CSS, Bootstrap and Java Script.
 ## Live Demo
 Experience the Tabs Project in action! Click the link below to access the live demo:
 
-[Live Demo] ( https://noorseenqandil.github.io/Signup-Login-System/)
+[Live Demo] ( https://noorseenqandil.github.io/Weather-App/)
 
 Feel free to interact with the project, browse through different jobs, and explore the user-friendly interface. The live demo provides a hands-on experience to see the Tabs Project in action.
 
